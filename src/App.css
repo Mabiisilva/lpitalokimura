@@ -653,6 +653,15 @@ body {
   .contato-buttons {
     flex-direction: column;
   }
+  .contato-buttons .whatsapp,
+  .contato-buttons a {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .contato-buttons .instagram {
+    width: 100%;
+  }
 }
 
 /* Custom styles for slick carousel arrows */
