@@ -500,6 +500,7 @@ function App() {
                 <button className="instagram">Instagram</button>
               </a>
             </div>
+             <h4>Funcionamento</h4>
             <table>
               <tr><td>Segunda-Feira</td><td>08h - 21h</td></tr>
               <tr><td>Terça-Feira</td><td>08h - 22h</td></tr>
