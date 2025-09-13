@@ -347,7 +347,7 @@ function App() {
         </div>
 {tab === 'treinos' && (
   <div className="galeria-img-vertical">
-    <div style={{display: 'flex', gap: '32px', justifyContent: 'center'}}>
+    <div className="galeria-cards-container">
       <div className="card-galeria" onClick={() => setOpenCompeticoes(true)} style={{cursor: 'pointer'}}>
         <h3>Competições</h3>
         <img src="/competicao1.jpg" alt="Competições" style={{width: '100%', maxWidth: '220px', borderRadius: '12px'}} />
