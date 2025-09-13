@@ -53,7 +53,7 @@ function GaleriaTreinosLightbox({ open, onClose }) {
       autoplay: true,
       controls: true,
       sources: [
-        { src: '/video-competicao.mp4', type: 'video/mp4' }
+        { src: '/video-treino.mp4', type: 'video/mp4' }
       ]
     },
     {
@@ -135,7 +135,8 @@ function AlunosCampeoes() {
       instagram: '@mabiisilva_bjj',
       titulos: [
         'Campeão ADCC OPEN NATAL 2023',
-        'Terceiro AJP TOUR JIU-JITSU FORTALEZA 2024'
+        'Terceiro AJP TOUR JIU-JITSU FORTALEZA 2024',
+        'Vice OPEN FORTALEZA CBJJ 2025'
       ]
     },
     {
@@ -365,37 +366,65 @@ function App() {
 )}
 
 {tab === 'titulos' && (
-  <div className="titulos-professor-vertical">
-    <div className="titulo-card-vertical">
-      <img src="/professor1.jpg" alt="Professor Campeão Mundial IBJJF" className="titulo-foto" />
-      <div>
-        <strong>Campeão Mundial IBJJF</strong>
-        <div className="ano blue">2018-2020</div>
-        <div>Faixa Preta Adulto</div>
+  <div className="titulos-professor-grid">
+    <div className="titulo-card">
+      <img src="/professor1.jpg" alt="Campeão Mundial IBJJF" className="titulo-foto" />
+      <div className="titulo-info">
+        <div>
+          <strong><span className="medalha gold">🏆</span> Campeão Mundial IBJJF</strong>
+          <div className="ano-badge">2018-2020</div>
+          <div className="titulo-desc">Conquista do título mundial na categoria Faixa Preta Adulto, o auge da competição no jiu-jitsu.</div>
+        </div>
       </div>
     </div>
-    <div className="titulo-card-vertical">
-      <img src="/professor2.jpg" alt="Professor Campeão Pan-Americano" className="titulo-foto" />
-      <div>
-        <strong>Campeão Pan-Americano</strong>
-        <div className="ano blue">2017-2019</div>
-        <div>Absoluto</div>
+    <div className="titulo-card">
+      <img src="/professor2.jpg" alt="Campeão Pan-Americano" className="titulo-foto" />
+      <div className="titulo-info">
+        <div>
+          <strong><span className="medalha gold">🥇</span> Campeão Pan-Americano</strong>
+          <div className="ano-badge">2017-2019</div>
+          <div className="titulo-desc">Vitória no campeonato Pan-Americano na categoria Absoluto, um dos mais prestigiados do circuito.</div>
+        </div>
       </div>
     </div>
-    <div className="titulo-card-vertical">
-      <img src="/professor3.jpg" alt="Professor Campeão Brasileiro" className="titulo-foto" />
-      <div>
-        <strong>Campeão Brasileiro</strong>
-        <div className="ano blue">2015-2021</div>
-        <div>Múltiplas Categorias</div>
+    <div className="titulo-card">
+      <img src="/professor3.jpg" alt="Campeão Brasileiro" className="titulo-foto" />
+      <div className="titulo-info">
+        <div>
+          <strong><span className="medalha gold">🥇</span> Campeão Brasileiro</strong>
+          <div className="ano-badge">2015-2021</div>
+          <div className="titulo-desc">Múltiplas vezes campeão nacional em diversas categorias, demonstrando consistência e domínio.</div>
+        </div>
       </div>
     </div>
-    <div className="titulo-card-vertical">
+    <div className="titulo-card">
       <img src="/professor4.jpg" alt="Nova União Team Captain" className="titulo-foto" />
-      <div>
-        <strong>Nova União Team Captain</strong>
-        <div className="ano blue">2020-Atual</div>
-        <div>Liderança Técnica</div>
+      <div className="titulo-info">
+        <div>
+          <strong><span className="medalha gold">🏆</span> Nova União Team Captain</strong>
+          <div className="ano-badge">2020-Atual</div>
+          <div className="titulo-desc">Capitão da equipe Nova União, liderando treinos e competidores com sua vasta experiência técnica.</div>
+        </div>
+      </div>
+    </div>
+    <div className="titulo-card">
+      <img src="/professor5.jpg" alt="Campeão Estadual" className="titulo-foto" />
+      <div className="titulo-info">
+        <div>
+          <strong><span className="medalha silver">🥈</span> Campeão Estadual</strong>
+          <div className="ano-badge">2016-2018</div>
+          <div className="titulo-desc">Título estadual na acirrada categoria Adulto, representando o topo do jiu-jitsu regional.</div>
+        </div>
+      </div>
+    </div>
+    <div className="titulo-card">
+      <img src="/professor6.jpg" alt="Campeão Open Internacional" className="titulo-foto" />
+      <div className="titulo-info">
+        <div>
+          <strong><span className="medalha bronze">🥉</span> Campeão Open Internacional</strong>
+          <div className="ano-badge">2019</div>
+          <div className="titulo-desc">Medalha de bronze no Open Internacional na categoria Absoluto, competindo contra atletas de elite.</div>
+        </div>
       </div>
     </div>
   </div>
@@ -495,9 +524,9 @@ function App() {
           <div className="contato-telefone-funcionamento-email">
             <h4>Contato</h4>
             <div className="contato-buttons">
-              <button className="whatsapp">WhatsApp</button>
-              <a href="https://www.instagram.com/escoladelutas.ik?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer">
-                <button className="instagram">Instagram</button>
+              <a href='https://wa.me/5585994202909' target='_blank' rel='noopener noreferrer' className="whatsapp">WhatsApp</a>
+              <a href="https://www.instagram.com/escoladelutas.ik?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer" className="instagram">
+                Instagram
               </a>
             </div>
              <h4>Funcionamento</h4>

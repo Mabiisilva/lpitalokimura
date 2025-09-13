@@ -61,12 +61,18 @@
   align-items: center;
 }
 .competicao-video {
-  width: 320px;
-  height: 180px;
-  border-radius: 12px;
-  background: #000;
-}
-.instagram-aluno {
+  width: 64px;
+  height: 64px;
+  min-width: 64px;
+  min-height: 64px;
+  max-width: 64px;
+  max-height: 64px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #f5f5f5;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  display: block;
+  margin: 0 auto;
   margin-top: 6px;
   font-size: 1rem;
   color: #e61919;
@@ -505,23 +511,31 @@ body {
   gap: 12px;
 }
 
+.contato-buttons > a {
+  flex: 1;
+  text-decoration: none;
+}
+
+.whatsapp,
+.instagram {
+  display: block;
+  width: 100%;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 24px;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
+  box-sizing: border-box;
+}
+
 .whatsapp {
   background: #e61919;
-  color: #fff;
-  border: none;
-  border-radius: 8px;
-  padding: 10px 24px;
-  font-weight: bold;
-  cursor: pointer;
 }
+
 .instagram {
   background: #1857c1;
-  color: #fff;
-  border: none;
-  border-radius: 8px;
-  padding: 10px 24px;
-  font-weight: bold;
-  cursor: pointer;
 }
 
 .mapa {
@@ -581,6 +595,76 @@ body {
 }
 
 
+
+/* Grid de títulos do professor em formato de tabela */
+.titulos-professor-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 24px;
+  margin: 24px auto;
+  max-width: 1200px;
+  justify-content: center;
+}
+.titulo-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.07);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 24px;
+  gap: 24px;
+  border: 1px solid #eee;
+  min-height: auto;
+}
+.titulo-foto {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #f5f5f5;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+.titulo-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+.ano-badge {
+  display: inline-block;
+  background: #1857c1;
+  color: #fff;
+  font-size: 0.85rem;
+  font-weight: 600;
+  border-radius: 6px;
+  padding: 4px 10px;
+  margin: 6px 0;
+}
+.titulo-desc {
+  color: #444;
+  font-size: 1rem;
+  margin-top: 4px;
+  line-height: 1.4;
+}
+
+@media (max-width: 768px) {
+  .titulos-professor-grid {
+    grid-template-columns: 1fr;
+  }
+  .titulo-card {
+    flex-direction: column;
+    text-align: center;
+  }
+  .titulo-foto {
+    margin-bottom: 16px;
+  }
+  .titulo-info {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 
 @media (max-width: 900px) {
   .about, .modalidades, .galeria, .regras, .contato, .footer {
@@ -652,15 +736,6 @@ body {
   }
   .contato-buttons {
     flex-direction: column;
-  }
-  .contato-buttons .whatsapp,
-  .contato-buttons a {
-    display: block;
-    width: 100%;
-    box-sizing: border-box;
-  }
-  .contato-buttons .instagram {
-    width: 100%;
   }
 }
 
