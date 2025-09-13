@@ -500,9 +500,6 @@ function App() {
                 <button className="instagram">Instagram</button>
               </a>
             </div>
-            <h4>Email</h4>
-            <p>contato@italokimura.com.br<br />academia@italokimura.com.br</p>
-            <h4>Funcionamento</h4>
             <table>
               <tr><td>Segunda-Feira</td><td>08h - 21h</td></tr>
               <tr><td>Terça-Feira</td><td>08h - 22h</td></tr>
