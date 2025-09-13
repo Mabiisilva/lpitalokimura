@@ -472,6 +472,26 @@ body {
   text-align: left;
 }
 
+.horarios-tabela {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 12px;
+}
+
+.horarios-tabela td {
+  padding: 8px 4px;
+  border-bottom: 1px solid #eee;
+}
+
+.horarios-tabela tr:last-child td {
+  border-bottom: none;
+}
+
+.horarios-tabela td:first-child {
+  font-weight: bold;
+  color: #333;
+}
+
 .contato-buttons {
   margin-top: 18px;
   display: flex;
@@ -571,6 +591,56 @@ body {
     flex-direction: column;
     gap: 24px;
     align-items: center;
+  }
+  .logo {
+    max-width: 80%; /* Reduce logo size on smaller screens */
+  }
+  .subtitle {
+    margin-top: 40px; /* Reduce space above subtitle */
+  }
+  .about-image img {
+    width: 100%; /* Make image responsive */
+    max-width: 320px; /* But not bigger than its original size */
+  }
+  .stats {
+    flex-direction: column;
+    gap: 16px;
+  }
+  h2 {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .parallax-header {
+    padding: 40px 20px 0 20px;
+    min-height: 300px;
+    background-attachment: scroll; /* Improves performance on mobile */
+  }
+  .logo {
+    max-width: 70%;
+  }
+  .subtitle {
+    font-size: 1rem;
+    margin-top: 20px;
+  }
+  .about-text h2, .modalidades h2, .galeria h2, .regras h2, .contato h2 {
+    font-size: 1.6rem;
+  }
+  .stats div {
+    padding: 12px 24px;
+    min-width: 0;
+  }
+  .titulos-aluno-modal-content {
+    flex-direction: column;
+    gap: 16px;
+  }
+  .aluno-foto-modal {
+    width: 120px;
+    height: 120px;
+  }
+  .contato-buttons {
+    flex-direction: column;
   }
 }
 
