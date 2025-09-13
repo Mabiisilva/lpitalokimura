@@ -1,0 +1,597 @@
+.card-galeria {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+  padding: 24px 18px;
+  min-width: 240px;
+  max-width: 260px;
+  text-align: center;
+  transition: box-shadow 0.2s;
+}
+.card-galeria:hover {
+  box-shadow: 0 6px 32px rgba(0,0,0,0.16);
+}
+.modal-galeria {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+}
+.modal-galeria-content {
+  background: #fff;
+  border-radius: 22px;
+  box-shadow: 0 8px 40px rgba(0,0,0,0.18);
+  padding: 40px 32px;
+  min-width: 340px;
+  max-width: 90vw;
+  text-align: center;
+}
+.fechar-modal {
+  background: #e22;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 24px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  margin-top: 24px;
+}
+.competicoes-bloco, .treinos-bloco {
+  margin-bottom: 32px;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+  padding: 24px 18px;
+}
+.competicoes-bloco h3, .treinos-bloco h3 {
+  color: #e61919;
+  margin-bottom: 18px;
+}
+.competicoes-media, .treinos-media {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: flex-start;
+  align-items: center;
+}
+.competicao-video {
+  width: 320px;
+  height: 180px;
+  border-radius: 12px;
+  background: #000;
+}
+.instagram-aluno {
+  margin-top: 6px;
+  font-size: 1rem;
+  color: #e61919;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+/* Modal de títulos do aluno - conteúdo lado a lado */
+.titulos-aluno-modal-content {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  justify-content: center;
+}
+.aluno-foto-modal {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #e22;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.10);
+}
+/* Grid dos alunos campeões */
+.alunos-campeoes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 48px;
+  justify-items: center;
+  margin: 48px auto 0 auto;
+  max-width: 1200px;
+}
+
+.aluno-card-grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fff;
+  border-radius: 28px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.12);
+  padding: 40px 24px;
+  transition: box-shadow 0.2s;
+  min-width: 240px;
+  min-height: 380px;
+}
+.aluno-card-grid:hover {
+  box-shadow: 0 4px 24px rgba(0,0,0,0.16);
+}
+
+.aluno-foto {
+  width: 90%;
+  height: 180px;
+  border-radius: 0;
+  object-fit: cover;
+  margin-bottom: 18px;
+  border: none;
+}
+
+.aluno-card-grid strong {
+  font-size: 1.1rem;
+  margin-bottom: 2px;
+  text-align: center;
+}
+.faixa {
+  font-size: 0.95rem;
+  color: #555;
+  text-align: center;
+}
+
+/* Modal de títulos do aluno */
+.titulos-aluno-grid {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 6px 32px rgba(0,0,0,0.18);
+  padding: 32px 28px;
+  z-index: 1000;
+  min-width: 320px;
+  max-width: 90vw;
+  text-align: center;
+}
+.titulos-aluno-grid h3 {
+  margin-bottom: 18px;
+  font-size: 1.25rem;
+}
+.titulos-aluno-grid ul {
+  list-style: disc inside;
+  margin-bottom: 18px;
+  text-align: left;
+}
+.titulos-aluno-grid button {
+  background: #e22;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 18px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 8px;
+}
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: linear-gradient(135deg, #7a0c0c 0%, #2c0000 100%);
+  color: #fff;
+}
+
+.red {
+  color: #e61919;
+}
+
+
+.parallax-header {
+  text-align: center;
+  padding: 80px 20px 60px 20px;
+  background-image: url('../public/treino1.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  display: block;
+  position: relative;
+  padding: 80px 48px 0 48px;
+  min-height: 420px;
+}
+
+
+.logo {
+  width: 100%;
+  max-width: 700px;
+  height: auto;
+  border-radius: 0;
+  object-fit: contain;
+  border: none;
+  box-shadow: 0 4px 32px rgba(0,0,0,0.14);
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 0;
+  flex: 1;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  margin: 160px 0 0 0;
+  text-align: center;
+  flex: 2;
+}
+
+.cta {
+  background: #1857c1;
+  color: #fff;
+  font-size: 1.2rem;
+  margin: 48px 0 0 0;
+  text-align: center;
+  max-width: 90vw;
+  display: block;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: max-content;
+  align-self: flex-start;
+  margin-top: 0;
+  margin-left: auto;
+  font-weight: bold;
+  transition: background 0.2s;
+}
+.cta:hover {
+  background: #0f3a7a;
+}
+
+.about {
+  display: flex;
+  flex-wrap: wrap;
+  background: #fff;
+  color: #222;
+  padding: 40px 10vw;
+  align-items: center;
+  gap: 40px;
+}
+
+.about-text {
+  flex: 1 1 350px;
+}
+
+.about-text h2 {
+  font-size: 2.2rem;
+  margin-bottom: 16px;
+}
+
+.stats {
+  display: flex;
+  gap: 40px;
+  margin-top: 30px;
+}
+
+.stats div {
+  background: #fff6f6;
+  border: 1px solid #e61919;
+  border-radius: 12px;
+  padding: 18px 32px;
+  text-align: center;
+  color: #e61919;
+  min-width: 120px;
+}
+
+.stats .icon {
+  font-size: 2rem;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.about-image {
+  flex: 1 1 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+}
+
+.about-image img {
+  width: 320px;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.12);
+}
+
+.nova-uniao-card {
+  background: #1857c1;
+  color: #fff;
+  border-radius: 12px;
+  padding: 18px 24px;
+  margin-top: 10px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.modalidades {
+  background: #f7f7f7;
+  color: #222;
+  padding: 40px 10vw;
+  text-align: center;
+}
+
+.modalidades h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.modalidades-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.modalidade-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  padding: 24px;
+  max-width: 340px;
+  text-align: left;
+}
+
+.modalidade-card img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 12px;
+}
+
+.modalidade-card h3 {
+  color: #e61919;
+  margin-bottom: 8px;
+}
+
+.modalidade-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 10px 0;
+  color: #1857c1;
+  font-weight: bold;
+}
+
+.galeria {
+  background: #fff;
+  color: #222;
+  padding: 40px 10vw;
+  text-align: center;
+}
+
+.galeria h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.galeria-buttons {
+  margin: 24px 0;
+}
+
+.galeria-buttons button {
+  background: #eee;
+  color: #222;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 24px;
+  margin: 0 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.galeria-buttons .red {
+  background: #e61919;
+  color: #fff;
+}
+.galeria-buttons button:hover {
+  background: #e61919;
+  color: #fff;
+}
+
+.galeria-img {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.galeria-img img {
+  width: 340px;
+  border-radius: 14px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+}
+
+.regras {
+  background: #f7f7f7;
+  color: #222;
+  padding: 40px 10vw;
+  text-align: center;
+}
+
+.regras h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.regras-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.regras-cards div {
+  background: #fff;
+  border-radius: 12px;
+  padding: 18px 24px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  text-align: left;
+}
+
+.regras-cards h4 {
+  color: #e61919;
+  margin-bottom: 8px;
+}
+
+.regras-cards ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.oss {
+  background: #ffeaea;
+  color: #e61919;
+  border-radius: 12px;
+  padding: 18px 24px;
+  margin-top: 30px;
+  font-weight: bold;
+}
+
+.contato {
+  background: #fff;
+  color: #222;
+  padding: 40px 10vw;
+  text-align: center;
+}
+
+.contato-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.contato-info > div {
+  background: #f7f7f7;
+  border-radius: 12px;
+  padding: 24px;
+  min-width: 320px;
+  box-sizing: border-box;
+  text-align: left;
+}
+
+.contato-buttons {
+  margin-top: 18px;
+  display: flex;
+  gap: 12px;
+}
+
+.whatsapp {
+  background: #e61919;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 24px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.instagram {
+  background: #1857c1;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 24px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.mapa {
+  background: #eee;
+  border-radius: 8px;
+  padding: 18px;
+  margin-bottom: 18px;
+  text-align: center;
+}
+
+.aula-experimental {
+  background: #1857c1;
+  color: #fff;
+  border-radius: 8px;
+  padding: 18px;
+}
+
+.aula-experimental ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer {
+  background: #222;
+  color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding: 40px 10vw 20px 10vw;
+  justify-content: space-between;
+  align-items: flex-start;
+  font-size: 1rem;
+}
+
+.footer-logo {
+  width: 60px;
+  margin-bottom: 10px;
+}
+
+.footer h3, .footer h4 {
+  margin: 0 0 10px 0;
+}
+
+.footer-social {
+  display: flex;
+  gap: 18px;
+  margin-top: 12px;
+}
+
+.footer-copy {
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+  color: #aaa;
+  font-size: 0.95rem;
+}
+
+
+
+@media (max-width: 900px) {
+  .about, .modalidades, .galeria, .regras, .contato, .footer {
+    padding: 30px 4vw;
+  }
+  .about, .contato-info {
+    flex-direction: column;
+    gap: 24px;
+  }
+  .modalidades-cards {
+    flex-direction: column;
+    gap: 24px;
+  }
+  .footer {
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+  }
+}
+
+/* Custom styles for slick carousel arrows */
+.slick-prev,
+.slick-next {
+    background: rgba(0, 0, 0, 0.4) !important;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.slick-prev:hover,
+.slick-next:hover {
+    background: rgba(0, 0, 0, 0.6) !important;
+}
+
+.slick-prev::before,
+.slick-next::before {
+    color: white;
+    font-size: 20px;
+    opacity: 1;
+}
