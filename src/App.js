@@ -45,6 +45,10 @@ function GaleriaTreinosLightbox({ open, onClose }) {
     { src: '/treino9.jpg', alt: 'Treino 9' },
     { src: '/treino10.jpg', alt: 'Treino 10' },
     { src: '/treino11.jpg', alt: 'Treino 11' },
+    { src: '/treino12.jpg', alt: 'Treino 12' },
+    { src: '/treino13.jpg', alt: 'Treino 13' },
+    { src: '/treino14.jpg', alt: 'Treino 14' },
+    { src: '/treino15.jpg', alt: 'Treino 15' },
    
     {
       type: 'video',
@@ -74,6 +78,16 @@ function GaleriaTreinosLightbox({ open, onClose }) {
       controls: true,
       sources: [
         { src: '/video-treino2.mp4', type: 'video/mp4' }
+      ]
+    },
+           {
+      type: 'video',
+      src: '/video-treino3.mp4',
+      alt: 'Vídeo do treino3',
+      autoplay: true,
+      controls: true,
+      sources: [
+        { src: '/video-treino3.mp4', type: 'video/mp4' }
       ]
     },
     // Adicione mais fotos/vídeos de treinos
