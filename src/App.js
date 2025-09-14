@@ -115,7 +115,10 @@ function AlunosCampeoes() {
       foto: '/anderson.jpg',
       instagram: '@anderson_furtunatobjj',
       titulos: [
-        'Campeão Regional Master'
+        'Campeã OPEN FORTALEZA CBJJ 2025 ',
+        'Campeã OPEN FORTALEZA WINTER CBJJ 2025',
+        'Campeã OPEN SALVADOR SPRING CBJJ 2024',
+        'Terceiro BRASILEIRO JIU-JITSU CBJJ 2017'
       ]
     },
     {
@@ -247,7 +250,7 @@ function App() {
         <div className="about-text">
           <h2>Professor <span className="red">Italo Kimura</span></h2>
           <p>
-            Com mais de duas décadas de experiência nas artes marciais, o Professor Italo Kimura é uma referência no Jiu-Jitsu brasileiro. Sua dedicação e paixão pela arte suave transformaram centenas de vidas ao longo de sua carreira.
+            Com quase de duas décadas de experiência nas artes marciais, o Professor Italo Kimura é uma referência no Jiu-Jitsu brasileiro. Sua dedicação e paixão pela arte suave transformaram centenas de vidas ao longo de sua carreira.
           </p>
           <p>
             Afiliado à renomada equipe Nova União, uma das academias mais conceituadas do mundo no Jiu-Jitsu e MMA, traz para seus alunos não apenas técnica, mas também os valores fundamentais das artes marciais: disciplina, respeito e perseverança.
@@ -368,62 +371,62 @@ function App() {
 {tab === 'titulos' && (
   <div className="titulos-professor-grid">
     <div className="titulo-card">
-      <img src="/professor1.jpg" alt="Campeão Mundial IBJJF" className="titulo-foto" />
+      <img src="/professor1.jpg" alt="Campeão Cearense" className="titulo-foto" />
       <div className="titulo-info">
         <div>
-          <strong><span className="medalha gold">🏆</span> Campeão Mundial IBJJF</strong>
+          <strong><span className="medalha gold">🏆</span> Campeão Cearense</strong>
           <div className="ano-badge">2018-2020</div>
-          <div className="titulo-desc">Conquista do título mundial na categoria Faixa Preta Adulto, o auge da competição no jiu-jitsu.</div>
+          <div className="titulo-desc">3x campeão cearense na categoria Faixa Preta Adulto, o auge da competição no jiu-jitsu.</div>
         </div>
       </div>
     </div>
     <div className="titulo-card">
-      <img src="/professor2.jpg" alt="Campeão Pan-Americano" className="titulo-foto" />
+      <img src="/professor2.jpg" alt="Campeão Norte-Nordeste" className="titulo-foto" />
       <div className="titulo-info">
         <div>
-          <strong><span className="medalha gold">🥇</span> Campeão Pan-Americano</strong>
+          <strong><span className="medalha gold">🥇</span> Campeão Norte-Nordeste</strong>
           <div className="ano-badge">2017-2019</div>
-          <div className="titulo-desc">Vitória no campeonato Pan-Americano na categoria Absoluto, um dos mais prestigiados do circuito.</div>
+          <div className="titulo-desc">Vitória no campeonato Norte-Nordeste na categoria Absoluto, um dos mais prestigiados do circuito.</div>
         </div>
       </div>
     </div>
     <div className="titulo-card">
-      <img src="/professor3.jpg" alt="Campeão Brasileiro" className="titulo-foto" />
+      <img src="/professor3.jpg" alt="Vice Campeão Sul-Americano" className="titulo-foto" />
       <div className="titulo-info">
         <div>
-          <strong><span className="medalha gold">🥇</span> Campeão Brasileiro</strong>
+          <strong><span className="medalha silver">🥈</span> Vice Campeão Sul-Americano</strong>
           <div className="ano-badge">2015-2021</div>
           <div className="titulo-desc">Múltiplas vezes campeão nacional em diversas categorias, demonstrando consistência e domínio.</div>
         </div>
       </div>
     </div>
     <div className="titulo-card">
-      <img src="/professor4.jpg" alt="Nova União Team Captain" className="titulo-foto" />
+      <img src="/professor5.jpg" alt="Open Fortaleza CBJJ" className="titulo-foto" />
       <div className="titulo-info">
         <div>
-          <strong><span className="medalha gold">🏆</span> Nova União Team Captain</strong>
+          <strong><span className="medalha gold">🥇</span> Open Fortaleza CBJJ</strong>
           <div className="ano-badge">2020-Atual</div>
-          <div className="titulo-desc">Capitão da equipe Nova União, liderando treinos e competidores com sua vasta experiência técnica.</div>
+          <div className="titulo-desc">3x Campeão Open Fortaleza CBJJ.</div>
         </div>
       </div>
     </div>
     <div className="titulo-card">
-      <img src="/professor5.jpg" alt="Campeão Estadual" className="titulo-foto" />
+      <img src="/professor6.jpg" alt="Campeão BadBoy" className="titulo-foto" />
       <div className="titulo-info">
         <div>
-          <strong><span className="medalha silver">🥈</span> Campeão Estadual</strong>
+          <strong><span className="medalha gold">🥇</span> Campeão BadBoy</strong>
           <div className="ano-badge">2016-2018</div>
-          <div className="titulo-desc">Título estadual na acirrada categoria Adulto, representando o topo do jiu-jitsu regional.</div>
+          <div className="titulo-desc">3x Campeão BadBoy na acirrada categoria Adulto, representando o topo do jiu-jitsu regional.</div>
         </div>
       </div>
     </div>
     <div className="titulo-card">
-      <img src="/professor6.jpg" alt="Campeão Open Internacional" className="titulo-foto" />
+      <img src="/professor8.jpg" alt="Campeão AJP Tour Jitsu" className="titulo-foto" />
       <div className="titulo-info">
         <div>
-          <strong><span className="medalha bronze">🥉</span> Campeão Open Internacional</strong>
+          <strong><span className="medalha gold">🥇</span> Campeão AJP Tour Jitsu</strong>
           <div className="ano-badge">2019</div>
-          <div className="titulo-desc">Medalha de bronze no Open Internacional na categoria Absoluto, competindo contra atletas de elite.</div>
+          <div className="titulo-desc">2x Campeão do AJP Tour Jitsu na categoria Absoluto, competindo contra atletas de elite.</div>
         </div>
       </div>
     </div>
@@ -531,12 +534,12 @@ function App() {
             </div>
              <h4>Funcionamento</h4>
             <table>
-              <tr><td>Segunda-Feira</td><td>08h - 21h</td></tr>
-              <tr><td>Terça-Feira</td><td>08h - 22h</td></tr>
-              <tr><td>Quarta-Feira</td><td>08h - 21h</td></tr>
-              <tr><td>Quinta-Feira</td><td>08h - 22h</td></tr>
-              <tr><td>Sexta-Feira</td><td>08h - 21h</td></tr>
-              <tr><td>Sábado</td><td>09h - 17h</td></tr>
+              <tr><td>Segunda-Feira</td><td>10h - 13h,</td><td>17h - 20h</td></tr>
+              <tr><td>Terça-Feira</td><td>10h - 13h,</td><td>17h - 20h</td></tr>
+              <tr><td>Quarta-Feira</td><td>16:30h - 23h</td></tr>
+              <tr><td>Quinta-Feira</td><td>10h - 13h,</td><td>17h - 20h</td></tr>
+              <tr><td>Sexta-Feira</td><td>16:30h - 23h</td></tr>
+              <tr><td>Sábado</td><td>Fechado</td></tr>
               <tr><td>Domingo</td><td>Fechado</td></tr>
             </table>
           </div>
