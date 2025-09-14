@@ -120,13 +120,14 @@
   box-shadow: 0 4px 24px rgba(0,0,0,0.16);
 }
 
-.aluno-foto {
-  width: 90%;
-  height: 180px;
-  border-radius: 0;
+.aluno-foto, .card-aluno img {
+  border-radius: 18px;
   object-fit: cover;
-  margin-bottom: 18px;
-  border: none;
+  width: 180px;
+  height: 180px;
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
 }
 
 .aluno-card-grid strong {
